@@ -15,6 +15,7 @@
         }
         #food-title{
             color: green;
+            
         }
         
         
@@ -22,10 +23,17 @@
             font-weight: 900;
 
         }
+
+        .bg-color{
+            background-color: rgb(126, 233, 122);
+        }
+        .big{
+            font-size: 100px;
+        }
     </style>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="b">
     <header>
         <h1>This is my header no banner</h1>
     </header>
@@ -62,6 +70,15 @@
                 <li>water</li>
             </ul>
         </section>
+        <section id="player-container">
+            <h1>Players</h1>
+            <ul>
+                <li>Ronaldo-1</li>
+                <li>Ronaldo-2</li>
+                <li>Ronaldo-3</li>
+                <li>Ronaldo-4</li>
+            </ul>
+        </section>
     </main>
 
     <script>
@@ -72,54 +89,55 @@
             name: "Belayet",
             id: 2222,
             study: function (sub){
-                console.log("studying sub: ", sub);
+                // console.log("studying sub: ", sub);
             }
         }
 
         // document.getElementsByTagName
         const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection);
+        // console.log(liCollection);
         for(const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         //al h1 tags
         const allheading = document.getElementsByTagName('h1');
         for(const heading of allheading){
-            console.log(heading.innerText);
+            // console.log(heading.innerText);
         }
 
         //all paragraph tag
         const allpara = document.getElementsByTagName('p');
         for (const para of allpara){
-            console.log(para.innerText);
+            // console.log(para.innerText);
         }
 
         //get by id
         const food = document.getElementById('food-title');
-        console.log(food.innerText)
+        // console.log(food.innerText)
 
         food.innerText = "Loving Food"
 
         //name
 
         const lastName = document.getElementById('last');
-        console.log(lastName);
+        // console.log(lastName);
         lastName.innerText='BONDHON';
         //main food
 
         const m = document.getElementsByClassName('main-food');
         for(const mF of m){
-            console.log(mF.innerText)
+            // console.log(mF.innerText)
         }
 
         //query selector all
 
         const qsl = document.querySelectorAll("#my span");
         for(const element of qsl){
-            console.log(element.innerText);
+            // console.log(element.innerText);
         }
     </script>
     <script src="js/hello.js"></script>
+    <script src="js/cssInJs.js"></script>
 </body>
 </html>
