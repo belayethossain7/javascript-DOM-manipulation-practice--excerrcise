@@ -8,6 +8,11 @@
         h1{
             color: brown;
         }
+        p{
+            border: 2px solid salmon;
+            text-align: center;
+            margin-top: 100px;
+        }
     </style>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -21,12 +26,49 @@
             <li>Belayet</li>
             <li>Hossain</li>
             <li>Bondhon</li>
+            <li>SE</li>
         </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eveniet minus nesciunt quas rerum id odit molestiae saepe laudantium odio et inventore sit vitae eos maiores dignissimos, velit itaque aperiam?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
     </main>
 
     <script>
-        console.log('Hello from Javascripts');
-        console.log("Belayet hossain");
+        // console.log('Hello from Javascripts');
+        // console.log("Belayet hossain");
+        // console.log("Document Object Model");
+        const student = {
+            name: "Belayet",
+            id: 2222,
+            study: function (sub){
+                console.log("studying sub: ", sub);
+            }
+        }
+
+        // document.getElementsByTagName
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        //al h1 tags
+        const allheading = document.getElementsByTagName('h1');
+        for(const heading of allheading){
+            console.log(heading.innerText);
+        }
+
+        //all paragraph tag
+        const allpara = document.getElementsByTagName('p');
+        for (const para of allpara){
+            console.log(para.innerText);
+        }
     </script>
     <script src="js/hello.js"></script>
 </body>
