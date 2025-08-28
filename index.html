@@ -13,6 +13,12 @@
             text-align: center;
             margin-top: 100px;
         }
+        #food-title{
+            color: green;
+        }
+        .main-food{
+            font-weight: bold;
+        }
     </style>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -25,10 +31,11 @@
         <ul>
             <li>Belayet</li>
             <li>Hossain</li>
-            <li>Bondhon</li>
-            <li>SE</li>
+            <li id="last">Bondhon</li>
+            <li class="main-food">SE</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eveniet minus nesciunt quas rerum id odit molestiae saepe laudantium odio et inventore sit vitae eos maiores dignissimos, velit itaque aperiam?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eveniet minus nesciunt quas rerum id odit molestiae saepe laudantium odio et inventore sit vitae eos maiores dignissimos, velit itaque aperiam?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
@@ -37,6 +44,17 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
+        </div>
+        <section>
+            <h1 id="food-title">Food I love</h1>
+            <ul>
+                <li class="main-food">Fish</li>
+                <li class="main-food">Mango</li>
+                <li class="main-food">lentil</li>
+                <li class="main-food">Rice</li>
+                <li>water</li>
+            </ul>
+        </section>
     </main>
 
     <script>
@@ -68,6 +86,24 @@
         const allpara = document.getElementsByTagName('p');
         for (const para of allpara){
             console.log(para.innerText);
+        }
+
+        //get by id
+        const food = document.getElementById('food-title');
+        console.log(food.innerText)
+
+        food.innerText = "Loving Food"
+
+        //name
+
+        const lastName = document.getElementById('last');
+        console.log(lastName);
+        lastName.innerText='BONDHON';
+        //main food
+
+        const m = document.getElementsByClassName('main-food');
+        for(const mF of m){
+            console.log(mF.innerText)
         }
     </script>
     <script src="js/hello.js"></script>
