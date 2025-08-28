@@ -16,8 +16,11 @@
         #food-title{
             color: green;
         }
-        .main-food{
-            font-weight: bold;
+        
+        
+        .food .main-food{
+            font-weight: 900;
+
         }
     </style>
     <link rel="stylesheet" href="styles/style.css">
@@ -27,13 +30,17 @@
         <h1>This is my header no banner</h1>
     </header>
     <main>
-        <h1>Welcome to my DOM</h1>
-        <ul>
-            <li>Belayet</li>
-            <li>Hossain</li>
-            <li id="last">Bondhon</li>
-            <li class="main-food">SE</li>
-        </ul>
+        <section id="my" class="name">
+            <h1>Welcome to my DOM</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis facere perspiciatis doloremque. <span>sweet sweet</span> Enim aperiam labore <span>exelent</span> id officiis voluptate impedit molestias qui fuga perspiciatis, deserunt quisquam voluptatibus, ipsum eius a!</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis hic voluptatem, odio eius incidunt <span>best</span> laborum beatae impedit, fuga similique itaque unde animi obcaecati nobis, quas aperiam omnis voluptates dolorem veniam!</h1>
+            <ul>
+                <li>Belayet</li>
+                <li>Hossain</li>
+                <li id="last">Bondhon</li>
+                <li class="main-food">SE</li>
+            </ul>
+        </section>
         <div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eveniet minus nesciunt quas rerum id odit molestiae saepe laudantium odio et inventore sit vitae eos maiores dignissimos, velit itaque aperiam?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
@@ -45,7 +52,7 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id perferendis, illo praesentium earum officia voluptatum ad eveniet expedita quia commodi eaque alias libero sequi nulla quasi in cupiditate voluptate accusamus!</p>
         </div>
-        <section>
+        <section class="food">
             <h1 id="food-title">Food I love</h1>
             <ul>
                 <li class="main-food">Fish</li>
@@ -104,6 +111,13 @@
         const m = document.getElementsByClassName('main-food');
         for(const mF of m){
             console.log(mF.innerText)
+        }
+
+        //query selector all
+
+        const qsl = document.querySelectorAll("#my span");
+        for(const element of qsl){
+            console.log(element.innerText);
         }
     </script>
     <script src="js/hello.js"></script>
